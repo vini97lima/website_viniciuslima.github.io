@@ -1,0 +1,44 @@
+.portifolio {
+  max-width: 1200px;
+  padding: 30px 80px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.portifolio-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  gap: 140px;
+}
+
+.entrega-img {
+  padding: 20px;
+  background-color: #2e2e2e;
+}
+
+.entrega-subtitulo {
+  font-family: "IBM Plex Mono";
+  margin: 5px 0;
+  line-height: 1;
+}
+.entrega-subtitulo span {
+  color: #e94109;
+}
+
+@media (max-width: 1000px) {
+  .portifolio-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 120px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portifolio-item {
+    margin-top: 60px;
+    gap: 20px;
+  }
+}
